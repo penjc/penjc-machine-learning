@@ -47,12 +47,6 @@ parts:
 - caption: FUNDAMENTALS OF MACHINE LEARNING
   numbered: True
   chapters:
-#   - file: ml-fundamentals/introduction/introduction
-#     sections:
-#     - file: ml-fundamentals/introduction/introduction-to-machine-learning
-#     - file: ml-fundamentals/introduction/the-history-of-machine-learning-and-ai
-#     - file: ml-fundamentals/introduction/fairness-and-machine-learning
-#     - file: ml-fundamentals/introduction/techniques-of-machine-learning
   - file: ml-fundamentals/ml-overview
   - file: ml-fundamentals/regression/regression-models-for-machine-learning
     sections:
@@ -67,15 +61,6 @@ parts:
     - file: ml-fundamentals/classification/more-classifiers
     - file: ml-fundamentals/classification/yet-other-classifiers
     - file: ml-fundamentals/classification/applied-ml-build-a-web-app
-  # - file: ml-fundamentals/neural-network/introduction
-  #   sections:
-  #   - file: ml-fundamentals/classification/introduction-to-classification
-  #   sections:
-  #   - file: ml-fundamentals/neural-network/neural-network-overview
-    # - file: ml-fundamentals/neural-network/convolutional-neural-networks
-    # - file: ml-fundamentals/neural-network/autoencoders
-    # - file: ml-fundamentals/neural-network/recurrent-neural-networks
-  # - file: ml-fundamentals/ml-summary
 - caption: ADVANCED MACHINE LEARNING
   numbered: True
   chapters:
@@ -83,26 +68,36 @@ parts:
     sections:
     - file: ml-advanced/clustering/introduction-to-clustering
     - file: ml-advanced/clustering/k-means-clustering
+  - file: ml-advanced/ensemble-learning/getting-started-with-ensemble-learning
+    sections:
+    - file: ml-advanced/ensemble-learning/bagging
+    - file: ml-advanced/ensemble-learning/random-forest
+    - file: ml-advanced/ensemble-learning/feature-importance
+  - file: ml-advanced/gradient-boosting/introduction-to-gradient-boosting
+    sections:
+    - file: ml-advanced/gradient-boosting/gradient-boosting
+    - file: ml-advanced/gradient-boosting/gradient-boosting-example
+    - file: ml-advanced/gradient-boosting/xgboost
+    - file: ml-advanced/gradient-boosting/xgboost-k-fold-cv-feature-importance
+  - file: ml-advanced/unsupervised-learning
   - file: ml-advanced/kernel-method
   - file: ml-advanced/model-selection
-  - file: ml-advanced/ensemble-learning
-  - file: ml-advanced/unsupervised-learning
-  - file: ml-advanced/generative-models
 - caption: DEEP LEARNING
   numbered: True
   chapters:
-  - file: deep-learning/dl-overview.md
-  - file: deep-learning/CNN.md
-  - file: deep-learning/GAN.md
-  - file: deep-learning/RNN.md
-  - file: deep-learning/AutoEncoder.md
-  - file: deep-learning/LSTM.md
-  - file: deep-learning/NLP.md
+  - file: deep-learning/dl-overview
+  - file: deep-learning/cnn
+  - file: deep-learning/gan.md
+  - file: deep-learning/rnn.md
+  - file: deep-learning/autoencoder.md
+  - file: deep-learning/lstm.md
   - file: deep-learning/time-series.md
-  - file: deep-learning/DQN.md
+  - file: deep-learning/dqn.md
   - file: deep-learning/dl-summary.md
   - file: deep-learning/image-classification.md
   - file: deep-learning/image-segmentation.md
+  - file: deep-learning/difussion-model.md
+  - file: deep-learning/object-detection
 - caption: MACHINE LEARNING PRODUCTIONIZATION
   maxdepth: 2
   numbered: True
@@ -115,20 +110,14 @@ parts:
 - caption: SUPPORTING MATERIALS
   numbered: True
   chapters:
-  - file: supporting-materials/pytorch.md
-  - file: supporting-materials/bamboolib.md
-  - file: supporting-materials/mito.md
-  - file: supporting-materials/KNN.md
-  - file: supporting-materials/semi-supervised-learning.md
-  - file: supporting-materials/unbalanced-problems.md
-  - file: supporting-materials/automl.md
+  - file: supporting-materials/unbalanced-problems
+  - file: supporting-materials/automl
 - caption: OTHERS
   numbered: True
   maxdepth: 1
   chapters:
-  - file: assignments/introduction
+  - file: assignments/README
     sections:
-    - file: assignments/get-started
     - file: assignments/set-up-env/first-assignment
     - file: assignments/set-up-env/second-assignment
     - file: assignments/project-plan-template
@@ -170,22 +159,32 @@ parts:
     - file: assignments/ml-fundamentals/regression-with-scikit-learn
     - file: assignments/ml-fundamentals/ml-linear-regression-1
     - file: assignments/ml-fundamentals/ml-linear-regression-2
+    - file: assignments/ml-fundamentals/ml-logistic-regression-1
+    - file: assignments/ml-fundamentals/ml-neural-network-1
+    # - file: assignments/ml-fundamentals/build-an-ml-web-app-1
+    # - file: assignments/ml-fundamentals/build-an-ml-web-app-2
     - file: assignments/ml-fundamentals/regression-tools
     - file: assignments/ml-fundamentals/managing-data
     - file: assignments/ml-fundamentals/exploring-visualizations
     - file: assignments/ml-fundamentals/try-a-different-model
     - file: assignments/ml-fundamentals/create-a-regression-model
     - file: assignments/ml-fundamentals/linear-and-polynomial-regression
-    - file: assignments/ml-fundamentals/build-classification-models-predict-the-price-range
+    # - file: assignments/ml-fundamentals/build-classification-models-predict-the-price-range
     - file: assignments/ml-fundamentals/retrying-some-regression
     - file: assignments/ml-fundamentals/pumpkin-varieties-and-color
     - file: assignments/ml-fundamentals/delicious-asian-and-indian-cuisines
     - file: assignments/ml-fundamentals/explore-classification-methods
-    - file: assignments/ml-advanced/clustering/research-other-visualizations-for-clustering
-    - file: assignments/ml-advanced/clustering/try-different-clustering-methods
+    - file: assignments/ml-advanced/kernel-method/kernel-method-assignment-1
+    - file: assignments/ml-advanced/kernel-method/support_vector_machines_for_regression
+    - file: assignments/ml-advanced/kernel-method/support_vector_machines_for_classification
+    - file: assignments/ml-advanced/kernel-method/decision_trees_for_regression
+    - file: assignments/ml-advanced/kernel-method/decision_trees_for_classification
+    - file: assignments/ml-advanced/model-selection/model-selection-assignment-1
     - file: assignments/ml-advanced/ensemble-learning/random-forests-intro-and-regression
     - file: assignments/ml-advanced/ensemble-learning/random-forests-for-classification
     - file: assignments/ml-advanced/ensemble-learning/beyond-random-forests-more-ensemble-models
+    - file: assignments/ml-advanced/ensemble-learning/decision-trees
+    - file: assignments/ml-advanced/gradient-boosting/hyperparameter-tuning-gradient-boosting
     - file: assignments/machine-learning-productionization/data-engineering
     - file: assignments/machine-learning-productionization/counterintuitive-challenges-in-ml-debugging
     - file: assignments/machine-learning-productionization/debugging-in-classification
@@ -194,6 +193,8 @@ parts:
     - file: assignments/ml-fundamentals/build-classification-models
     - file: assignments/ml-fundamentals/build-classification-model
     - file: assignments/ml-fundamentals/parameter-play
+    - file: assignments/deep-learning/cnn-assignment-1
+    - file: assignments/deep-learning/cnn-assignment-2
   - file: slides/introduction
     sections:
     - file: slides/python-programming/python-programming-introduction
@@ -207,4 +208,12 @@ parts:
     - file: slides/data-science/data-science-in-the-cloud
     - file: slides/data-science/data-science-in-real-world
     - file: slides/ml-fundamentals/ml-overview
-
+    - file: slides/ml-fundamentals/linear-regression
+    - file: slides/ml-fundamentals/logistic-regression
+    - file: slides/ml-fundamentals/neural-network
+    - file: slides/ml-fundamentals/build-an-ml-web-app
+    - file: slides/ml-advanced/unsupervised-learning
+    - file: slides/ml-advanced/kernel-method
+    - file: slides/ml-advanced/model-selection
+    - file: slides/deep-learning/cnn
+    - file: slides/deep-learning/gan
